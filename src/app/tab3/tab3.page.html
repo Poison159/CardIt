@@ -6,4 +6,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <h2>Scan barcode on back of card to add it</h2>
+  <ion-button expand="full" (click)="scan()" color="dark" size="large">Scan</ion-button>
+  <ion-item [(ngModel)]="encodedData" ngDefaultControl></ion-item>
+</ion-content>
