@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Choose Shop</ion-title>
+    <ion-icon (click)="dismiss()" style="zoom:1.5; padding-right:10px;" name="close" slot="end"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item style="background-repeat:no-repeat;background-size:100%;background-image:url({{shop.ImagePath}})" *ngFor="let shop of shops">
+     <ion-title (click)="scan(shop.Name)">{{shop.Name}}</ion-title> 
+    </ion-item>
+  </ion-list>
+</ion-content>

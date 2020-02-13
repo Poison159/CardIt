@@ -8,6 +8,6 @@
 
 <ion-content>
   <h2>Scan barcode on back of card to add it</h2>
-  <ion-button expand="full" (click)="scan()" color="dark" size="large">Scan</ion-button>
+  <ion-button expand="full" (click)="presentModal()" color="dark" size="large">Add Card</ion-button>
   <ion-item [(ngModel)]="encodedData" ngDefaultControl></ion-item>
 </ion-content>
